@@ -1,0 +1,159 @@
+body {
+	background-image: linear-gradient(to left top, #283f84, #003422, #00262c, #020202);
+	font-family: sans-serif;
+	height: 100vh;
+}
+
+.one {
+	text-align: center;
+	position: relative;
+	margin-top: 10%;
+}
+
+.one .btn-1 {
+	position: absolute;
+	left: 30%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1.2px solid #f00;
+	outline: none;
+	padding: 15px;
+	background-color: transparent;
+	cursor: pointer;
+	box-shadow: 0px 5px 6px #000;
+	transition: 0.5s;
+}
+
+
+.one .btn-1:hover{
+	background-color: #f00;
+	transform: translate(1px, -5px);
+	box-shadow: 1px 1px 1px #f00,
+				-1px -1px 1px #f00,
+				1px -1px 1px #f00,
+				-1px 1px 1px #f00;
+	box-shadow: 1px 8px 6px #000;
+}
+
+.one .btn-1:hover .fas {
+	color: #000;
+}
+
+.one .btn-1:active {
+	transform: translate(-1px, -10px);
+}
+
+.one .btn-1::before {
+	content: "Delete !";
+	position: absolute;
+	top: -60px;
+	left: -20px;
+	border: 1px solid #f00;
+	border-radius: 5px;
+	box-sizing: border-box;
+	width: 100px;
+	padding: 8px;
+	color: #f00;
+	letter-spacing: 1px;
+	box-shadow: 0.6px 0.6px 0.6px red,
+				-0.6px -0.6px 0.6px red,
+				0.6px -0.6px 0.6px red,
+				-0.6px 0.6px 0.6px red;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.one .btn-1::after {
+	content: "";
+	position: absolute;
+	top: -26px;
+	left: 25px;
+	border-top: 6px solid #f00;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.btn-1:hover::before, .btn-1:hover::after {
+	opacity: 1;
+}
+
+.one .btn-2:hover{
+	background-color: #0f0;
+	transform: translate(1px, -5px);
+	box-shadow: 1px 1px 1px #00FF00,
+				-1px -1px 1px #00FF00,
+				1px -1px 1px #00FF00,
+				-1px 1px 1px #00FF00;
+	box-shadow: 1px 8px 6px #000;
+}
+
+.one .btn-2:hover .fas {
+	color: #000;
+}
+
+.one .btn-2:active {
+	transform: translate(-1px, -10px);
+}
+
+.one .btn-2::before {
+	content: "Add to cart";
+	position: absolute;
+	top: -60px;
+	left: -20px;
+	border: 1px solid #0f0;
+	border-radius: 5px;
+	box-sizing: border-box;
+	width: 100px;
+	padding: 8px;
+	color: #0f0;
+	letter-spacing: 1px;
+	box-shadow: 0.6px 0.6px 0.6px #0f0,
+				-0.6px -0.6px 0.6px #0f0,
+				0.6px -0.6px 0.6px #0f0,
+				-0.6px 0.6px 0.6px #0f0;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.one .btn-2::after {
+	content: "";
+	position: absolute;
+	top: -26px;
+	left: 25px;
+	border-top: 6px solid #0f0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.btn-2:hover::before, .btn-2:hover::after {
+	opacity: 1;
+}
+
+.btn-1 .fas {
+	color: #f00;
+	font-size: 20px;
+}
+
+.one .btn-2 {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1.2px solid #0f0;
+	outline: none;
+	padding: 12px;
+	background-color: transparent;
+	cursor: pointer;
+	box-shadow: 0px 5px 6px #000;
+	transition: 0.5s;
+}
+
+.btn-2 .fas {
+	color: 	#00FF00;
+	font-size: 20px;
+}
